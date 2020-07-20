@@ -13,7 +13,7 @@
         </ul>
       </div>
     <% end %>
-    <span>KDA<%= @tweet.kill %>/<%= @tweet.death %>/<%= @tweet.assist %></span>
+    <span　class="kda-count">KDA<%= @tweet.kill %>/<%= @tweet.death %>/<%= @tweet.assist %></span>
     <p><%= @tweet.text %></p>
     <span class="name">
       <a href="/users/<%= @tweet.user.id %>">

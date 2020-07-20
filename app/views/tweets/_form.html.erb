@@ -1,14 +1,8 @@
-<%= form_with(model: @tweet, local: true) do |f| %>
-  <div class = "imagef">
-    <%= f.label :image do %>
-      <%= f.file_field :image %>
-    <% end %>
-  </div>
-  <%= f.text_area :text, placeholder: "text", rows: "10" %>
-  <div class = "kda">
-    <%= f.number_field :kill, placeholder: "k" %>
-    <%= f.number_field :death, placeholder: "d" %>
-    <%= f.number_field :assist, placeholder: "a" %>
-  </div>
-  <%= f.submit "SEND" %>
-<% end %>
+<%= form.file_field :image %>
+<%= form.text_area :text, placeholder: "text", rows: "10" %>
+<div class = "kda">
+  <%= form.number_field :kill, placeholder: "k" %>
+  <%= form.number_field :death, placeholder: "d" %>
+  <%= form.number_field :assist, placeholder: "a" %>
+</div>
+<%= form.submit "SEND" %>

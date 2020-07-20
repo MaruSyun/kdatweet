@@ -2,7 +2,7 @@
   <p><%= @nickname %>さんの投稿一覧</p>
   <% @tweets.each do |tweet| %>
     <div class="content_post" style="background-image: url(<%= tweet.image %>);">
-      <span>KDA<%= tweet.kill %>/<%= tweet.death %>/<%= tweet.assist %></span>
+      <span class="kda-count">KDA<%= tweet.kill %>/<%= tweet.death %>/<%= tweet.assist %></span>
       <p><%= tweet.text %></p>
     </div>
   <% end %>
